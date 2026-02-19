@@ -6,6 +6,8 @@ import { DashboardHeader } from "@/components/blocks/dashboard-header";
 import { SchedulingClient } from "@/components/scheduling/scheduling-client";
 import { Skeleton } from "@/components/ui/skeleton";
 
+import { SchedulingResponse } from "@/types";
+
 export function SchedulingPage() {
   const { t } = useTranslation('translation', { keyPrefix: 'scheduling' });
   const { data: scheduling, isLoading: isSchedulingLoading } = useScheduling();
@@ -15,11 +17,11 @@ export function SchedulingPage() {
 
   const showSkeleton = useDelayedLoading(isLoading);
 
-  const defaultScheduling = {
+  const defaultScheduling: SchedulingResponse = {
     plan: "free",
     reports: { auto_generate: true, send_email: false, frequency: "monthly", cron_description: "", used: 0, limit: 1, owner_email: "", recipients: [] as string[] },
-    recommendations: { auto_generate: true, enabled: false, frequency: "none", cron_description: "", used: 0, limit: 0 },
-    keywords: { frequency: "monthly", cron_description: "", used: 0, limit: 6, auto_query_count: 0, total_keywords: 0, allowed_platforms: ["openai", "gemini"] },
+    recommendations: { auto_generate: true, send_email: false, enabled: false, frequency: "none", cron_description: "", used: 0, limit: 0 },
+    keywords: { frequency: "monthly", cron_description: "", used: 0, limit: 6, auto_query_count: 0, total_keywords: 0, allowed_platforms: ["openai", "gemini"], send_email: false },
   };
 
   if (showSkeleton) {
