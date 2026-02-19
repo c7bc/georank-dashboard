@@ -10,9 +10,12 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 export function CompetitorsPage() {
   const { t } = useTranslation('translation', { keyPrefix: 'competitors' });
-  const { data: plan } = useBillingPlan();
-  const { data: competitorsData, isLoading } = useCompetitors();
-  const { data: metricsData } = useDashboardMetrics();
+  const { data: plan, isLoading: isPlanLoading } = useBillingPlan();
+  const { data: competitorsData, isLoading: isCompetitorsLoading } = useCompetitors();
+  const { data: metricsData, isLoading: isMetricsLoading } = useDashboardMetrics();
+  
+  const isLoading = isPlanLoading || isCompetitorsLoading || isMetricsLoading;
+  const showSkeleton = useDelayedLoading(isLoading);
 
   if (plan && !plan.competitors_enabled) {
     return (
@@ -28,8 +31,6 @@ export function CompetitorsPage() {
       </>
     );
   }
-
-  const showSkeleton = useDelayedLoading(isLoading);
 
   if (showSkeleton) {
     return (

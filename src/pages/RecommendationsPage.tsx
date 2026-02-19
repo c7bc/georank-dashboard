@@ -9,8 +9,10 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 export function RecommendationsPage() {
   const { t } = useTranslation('translation', { keyPrefix: 'sidebar' });
-  const { data: plan } = useBillingPlan();
-  const { data: recData, isLoading } = useRecommendations();
+  const { data: plan, isLoading: isPlanLoading } = useBillingPlan();
+  const { data: recData, isLoading: isRecsLoading } = useRecommendations();
+  const isLoading = isPlanLoading || isRecsLoading;
+  const showSkeleton = useDelayedLoading(isLoading);
 
   if (plan && !plan.recommendations_enabled) {
     return (
@@ -26,9 +28,6 @@ export function RecommendationsPage() {
       </>
     );
   }
-
-  const showSkeleton = useDelayedLoading(isLoading);
-
   if (showSkeleton) {
     return (
       <>

@@ -12,9 +12,11 @@ import { Button } from "@/components/ui/button";
 export function ReportsPage() {
   const { t } = useTranslation('translation', { keyPrefix: 'reports' });
   const { t: tCommon } = useTranslation('translation', { keyPrefix: 'common.errorStates' });
-  const { data: reportsData, isLoading, isError, refetch } = useReports();
-  const { data: schedulingData } = useScheduling();
-  const { data: meData } = useMe();
+  const { data: reportsData, isLoading: isReportsLoading, isError, refetch } = useReports();
+  const { data: schedulingData, isLoading: isSchedulingLoading } = useScheduling();
+  const { data: meData, isLoading: isMeLoading } = useMe();
+  
+  const isLoading = isReportsLoading || isSchedulingLoading || isMeLoading;
 
   const plan = meData?.plan || "free";
   const teamEnabled = ["starter", "pro", "agency", "enterprise"].includes(plan);

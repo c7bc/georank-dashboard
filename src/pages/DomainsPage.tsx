@@ -8,8 +8,9 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 export function DomainsPage() {
   const { t } = useTranslation('translation', { keyPrefix: 'domains' });
-  const { data: domainsData, isLoading } = useDomains();
-  const { data: plan } = useBillingPlan();
+  const { data: domainsData, isLoading: isDomainsLoading } = useDomains();
+  const { data: plan, isLoading: isPlanLoading } = useBillingPlan();
+  const isLoading = isDomainsLoading || isPlanLoading;
 
   let domains = [];
   if (domainsData) {

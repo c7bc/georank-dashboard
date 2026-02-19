@@ -9,8 +9,11 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 export function TeamPage() {
   const { t } = useTranslation('translation', { keyPrefix: 'sidebar' });
-  const { data: plan } = useBillingPlan();
-  const { data: teamData, isLoading } = useTeamMembers();
+  const { data: plan, isLoading: isPlanLoading } = useBillingPlan();
+  const { data: teamData, isLoading: isTeamLoading } = useTeamMembers();
+  
+  const isLoading = isPlanLoading || isTeamLoading;
+  const showSkeleton = useDelayedLoading(isLoading);
 
   if (plan && !plan.team_enabled) {
     return (
@@ -26,8 +29,6 @@ export function TeamPage() {
       </>
     );
   }
-
-  const showSkeleton = useDelayedLoading(isLoading);
 
   if (showSkeleton) {
     return (

@@ -13,7 +13,7 @@ export function KeywordsPage() {
   const [searchParams] = useSearchParams();
   const page = parseInt(searchParams.get("page") || "1", 10);
 
-  const { data: keywordsData, isLoading } = useKeywords({
+  const { data: keywordsData, isLoading: isKeywordsLoading } = useKeywords({
     page,
     per_page: 10,
     status: searchParams.get("status") || undefined,
@@ -23,10 +23,11 @@ export function KeywordsPage() {
     domain_id: searchParams.get("domain_id") || undefined,
   });
 
-  const { data: usage } = useBillingUsage();
-  const { data: plan } = useBillingPlan();
-  const { data: domainsData } = useDomains();
+  const { data: usage, isLoading: isUsageLoading } = useBillingUsage();
+  const { data: plan, isLoading: isPlanLoading } = useBillingPlan();
+  const { data: domainsData, isLoading: isDomainsLoading } = useDomains();
 
+  const isLoading = isKeywordsLoading || isUsageLoading || isPlanLoading || isDomainsLoading;
   const domainsArray = Array.isArray(domainsData) ? domainsData : ((domainsData as any)?.items ?? []);
   const domains = domainsArray.map((d: { id: number; name: string; url: string }) => ({ id: d.id, name: d.name, url: d.url }));
 
