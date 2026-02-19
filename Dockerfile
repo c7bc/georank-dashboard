@@ -21,14 +21,13 @@ FROM nginx:1.27-alpine
 
 RUN apk add --no-cache wget
 
-# Copy assets to a subdirectory matching the URL path /dashboard/
-RUN mkdir -p /usr/share/nginx/html/dashboard
-COPY --from=builder /app/dist /usr/share/nginx/html/dashboard
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Copy assets to the root web folder (as proxy strips /dashboard prefix)
+COPY --from=builder /app/dist /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/nginx.conf
 
-EXPOSE 80
+EXPOSE 3001
 
 HEALTHCHECK --interval=30s --timeout=5s --retries=3 \
-    CMD wget -qO- http://127.0.0.1/health | grep ok || exit 1
+    CMD wget -qO- http://127.0.0.1:3001/health | grep ok || exit 1
 
 CMD ["nginx", "-g", "daemon off;"]
