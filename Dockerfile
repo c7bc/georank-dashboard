@@ -19,6 +19,8 @@ RUN npm run build
 # ============================================
 FROM nginx:1.27-alpine
 
+RUN apk add --no-cache wget
+
 # Copy assets to a subdirectory matching the URL path /dashboard/
 RUN mkdir -p /usr/share/nginx/html/dashboard
 COPY --from=builder /app/dist /usr/share/nginx/html/dashboard
