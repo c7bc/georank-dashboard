@@ -56,14 +56,14 @@ export function TopKeywords({ data = [] }: TopKeywordsProps) {
       </div>
 
 
-<div className="overflow-hidden rounded-lg border bg-card/30">
+<div className="overflow-x-auto rounded-lg border bg-card/30">
         <Table>
           <TableHeader className="bg-muted/50">
             <TableRow className="hover:bg-transparent border-b">
-              <TableHead className="h-9 text-xs font-semibold px-4 text-muted-foreground">{t("keyword")}</TableHead>
-              <TableHead className="h-9 text-xs font-semibold text-muted-foreground">{t("score")}</TableHead>
+              <TableHead className="h-9 text-xs font-semibold px-4 text-muted-foreground w-[45%]">{ t("keyword")}</TableHead>
+              <TableHead className="h-9 text-xs font-semibold text-muted-foreground w-[25%]">{t("score")}</TableHead>
               <TableHead className="h-9 text-xs font-semibold text-muted-foreground">{t("trend")}</TableHead>
-              <TableHead className="h-9 text-xs font-semibold px-4 text-right text-muted-foreground">{t("status")}</TableHead>
+              <TableHead className="h-9 text-xs font-semibold px-4 text-right text-muted-foreground hidden sm:table-cell">{t("status")}</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -80,7 +80,7 @@ export function TopKeywords({ data = [] }: TopKeywordsProps) {
               <TableRow key={keyword.id} className="hover:bg-muted/40 transition-colors border-b last:border-0">
                 <TableCell className="px-4 py-2.5">
                   <div className="flex flex-col gap-0.5">
-                    <span className="font-medium text-sm leading-tight">{keyword.keyword}</span>
+                    <span className="font-medium text-sm leading-tight truncate">{keyword.keyword}</span>
                     {(keyword.mentions !== undefined || keyword.visibility !== undefined) && (
                       <span className="text-[11px] text-muted-foreground tabular-nums">
                         {keyword.mentions !== undefined && `${keyword.mentions} mention${keyword.mentions !== 1 ? "s" : ""}`}
@@ -93,7 +93,7 @@ export function TopKeywords({ data = [] }: TopKeywordsProps) {
                 <TableCell className="py-2.5">
                   <div className="flex items-center space-x-2">
                     <span className="text-xs font-semibold tabular-nums">{keyword.score}</span>
-                    <Progress value={keyword.score} className="w-12 h-1 bg-muted" />
+                    <Progress value={keyword.score} className="w-12 h-1 bg-muted hidden sm:block" />
                   </div>
                 </TableCell>
                 <TableCell className="py-2.5">
@@ -112,7 +112,7 @@ export function TopKeywords({ data = [] }: TopKeywordsProps) {
                     {keyword.trend > 0 ? "+" : ""}{keyword.trend}%
                   </Badge>
                 </TableCell>
-                <TableCell className="px-4 text-right py-2.5">
+                <TableCell className="px-4 text-right py-2.5 hidden sm:table-cell">
                   <Badge
                     variant="outline"
                     className={cn(

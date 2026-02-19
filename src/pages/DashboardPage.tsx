@@ -182,17 +182,21 @@ export function DashboardPage() {
           <Separator className="opacity-50" />
 
           <div className="space-y-8">
-            <div className="grid gap-8 lg:grid-cols-2">
+            <div className="grid gap-8 md:grid-cols-2">
+              <div className="min-w-0">
               {showMentionsSkeleton ? (
                 <Skeleton className="h-[300px] w-full rounded-xl" />
               ) : (
                 <RecentMentions data={mentionsList} />
               )}
+              </div>
+              <div className="min-w-0">
               {showKeywordsSkeleton ? (
                 <Skeleton className="h-[300px] w-full rounded-xl" />
               ) : (
                 <TopKeywords data={keywordsList} />
               )}
+              </div>
             </div>
 
             <PlatformBreakdown

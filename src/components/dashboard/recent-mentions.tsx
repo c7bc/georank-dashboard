@@ -50,14 +50,14 @@ export function RecentMentions({ data = [] }: RecentMentionsProps) {
           </Link>
         </div>
 
-        <div className="overflow-hidden rounded-lg border bg-card/30">
-          <Table>
+        <div className="overflow-x-auto rounded-lg border bg-card/30">
+          <Table className="table-fixed">
             <TableHeader className="bg-muted/50">
               <TableRow className="hover:bg-transparent border-b">
                 <TableHead className="h-9 text-xs font-semibold px-4 text-muted-foreground">Platform</TableHead>
                 <TableHead className="h-9 text-xs font-semibold text-muted-foreground">Query</TableHead>
                 <TableHead className="h-9 text-xs font-semibold text-muted-foreground">Result</TableHead>
-                <TableHead className="h-9 text-xs font-semibold px-4 text-right text-muted-foreground">Time</TableHead>
+                <TableHead className="h-9 text-xs font-semibold px-4 text-right text-muted-foreground hidden sm:table-cell">Time</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -82,7 +82,7 @@ export function RecentMentions({ data = [] }: RecentMentionsProps) {
                       {platformIcons[mention.platform]}
                     </Badge>
                   </TableCell>
-                  <TableCell className="max-w-[180px] truncate font-medium text-sm py-2">
+                  <TableCell className="max-w-[120px] sm:max-w-[180px] truncate font-medium text-sm py-2">
                     {mention.query}
                   </TableCell>
                   <TableCell className="py-2">
@@ -98,7 +98,7 @@ export function RecentMentions({ data = [] }: RecentMentionsProps) {
                       </Badge>
                     )}
                   </TableCell>
-                  <TableCell className="text-muted-foreground text-xs px-4 text-right tabular-nums py-2">
+                  <TableCell className="text-muted-foreground text-xs px-4 text-right tabular-nums py-2 hidden sm:table-cell">
                     {mention.time}
                   </TableCell>
                 </TableRow>

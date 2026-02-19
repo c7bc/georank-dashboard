@@ -6,6 +6,7 @@ import {
   SheetContent,
   SheetHeader,
   SheetTitle,
+  SheetClose,
 } from "@/components/ui/sheet";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -93,6 +94,10 @@ export function KeywordMentionsSheet({
       <Sheet open={open && !selectedMention} onOpenChange={onOpenChange}>
         <SheetContent className="w-full sm:max-w-lg overflow-y-auto border-l border-border bg-background p-0">
           <div className="sticky top-0 z-10 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-6 pt-6 pb-4">
+            <SheetClose className="absolute top-4 right-4 z-20 sm:hidden rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
+              <X className="size-5" />
+              <span className="sr-only">Close</span>
+            </SheetClose>
             <SheetHeader className="space-y-1">
               <SheetTitle className="text-base font-semibold">
                 {t("queriesTitle")}

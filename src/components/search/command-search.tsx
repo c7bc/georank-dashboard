@@ -167,7 +167,7 @@ export function CommandSearch({ open, onOpenChange }: CommandSearchProps) {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="overflow-hidden p-0 shadow-2xl border border-border max-w-[640px] bg-popover">
+      <DialogContent className="overflow-hidden p-0 shadow-2xl border border-border max-w-[calc(100vw-2rem)] sm:max-w-[640px] bg-popover">
         <DialogTitle className="sr-only">Command Search</DialogTitle>
         <Command
           ref={commandRef}
