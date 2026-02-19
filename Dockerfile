@@ -15,17 +15,18 @@ COPY . .
 
 RUN npm run build
 
-# ============================================
 # Production stage — nginx static server
 # ============================================
 FROM nginx:1.27-alpine
 
-COPY --from=builder /app/dist /usr/share/nginx/html
+# Copy assets to a subdirectory matching the URL path /dashboard/
+RUN mkdir -p /usr/share/nginx/html/dashboard
+COPY --from=builder /app/dist /usr/share/nginx/html/dashboard
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 
 HEALTHCHECK --interval=30s --timeout=5s --retries=3 \
-    CMD wget --no-verbose --tries=1 --spider http://127.0.0.1/dashboard/ || exit 1
+    CMD wget -qO- http://127.0.0.1/health | grep ok || exit 1
 
 CMD ["nginx", "-g", "daemon off;"]
