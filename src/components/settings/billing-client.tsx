@@ -144,6 +144,12 @@ export function BillingClient({ plan, usage, invoices, userEmail, showSuccess, p
   };
 
   const handleUpgrade = async (planKey: string) => {
+    // Paid users: portal handles plan switch natively (immediate billing, no cancel+resubscribe)
+    if (plan?.name && plan.name !== "free") {
+      await openStripePortal();
+      return;
+    }
+    // Free users: checkout (new subscription)
     setIsLoading(true);
     try {
       const result = await billingApi.createCheckout(
