@@ -39,7 +39,7 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
       {
         label: t("main"),
         items: [
-          { title: t("dashboard"), icon: LayoutDashboard, url: "/dashboard" },
+          { title: t("dashboard"), icon: LayoutDashboard, url: "/" },
           { title: t("domains"), icon: Globe, url: "/domains" },
           { title: t("keywords"), icon: Search, url: "/keywords" },
           { title: t("competitors"), icon: Users, url: "/competitors" },
@@ -58,14 +58,14 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
       },
     ],
   };
-
+ 
   return (
     <Sidebar variant="inset" collapsible="icon" {...props}>
       <SidebarHeader className="py-8">
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild className="md:h-8 hover:bg-transparent active:bg-transparent group-data-[collapsible=icon]:!p-0 group-data-[collapsible=icon]:justify-center [&>svg]:size-[28px]">
-              <Link to="/dashboard" className="flex items-center gap-3">
+              <Link to="/" className="flex items-center gap-3">
                 <GeoRankIcon size={28} className="text-primary shrink-0 transition-transform" />
                 <span className="text-xl font-bold tracking-tight truncate group-data-[collapsible=icon]:hidden">
                   GeoRank

@@ -20,11 +20,11 @@ import { IntegrationsPage } from '@/pages/settings/IntegrationsPage'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/dashboard">
       <Routes>
         <Route path="/onboarding" element={<OnboardingPage />} />
         <Route element={<AuthenticatedLayout />}>
-          <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/" element={<DashboardPage />} />
           <Route path="/keywords" element={<KeywordsPage />} />
           <Route path="/competitors" element={<CompetitorsPage />} />
           <Route path="/domains" element={<DomainsPage />} />
@@ -40,8 +40,7 @@ export default function App() {
           <Route path="/settings/api-keys" element={<ApiKeysPage />} />
           <Route path="/settings/integrations" element={<IntegrationsPage />} />
         </Route>
-        <Route path="/" element={<Navigate to="/dashboard" replace />} />
-        <Route path="*" element={<Navigate to="/dashboard" replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Toaster />
     </BrowserRouter>

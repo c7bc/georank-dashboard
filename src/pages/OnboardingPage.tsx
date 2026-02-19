@@ -123,7 +123,7 @@ export function OnboardingPage() {
   };
 
   const handleComplete = () => {
-    navigate("/dashboard");
+    navigate("/");
   };
 
   const suggestions = [
