@@ -1,0 +1,1049 @@
+{
+  "metadata": {
+    "title": "GeoRank - Sé descubierto por IA. No solo por Google.",
+    "description": "Monitorea y optimiza la visibilidad de tu marca en las respuestas de ChatGPT, Claude, Perplexity y Gemini. La herramienta SEO para la era de la IA."
+  },
+  "nav": {
+    "features": "Características",
+    "integrations": "Integraciones",
+    "pricing": "Precios",
+    "resources": "Recursos",
+    "blog": "Blog",
+    "docs": "Docs",
+    "contact": "Contacto",
+    "about": "Sobre Nosotros",
+    "login": "Entrar",
+    "startFree": "Empezar Gratis"
+  },
+  "hero": {
+    "badge": "SEO para la era de la IA",
+    "title": "Simplificando la visibilidad en la",
+    "titleHighlight": "era de la búsqueda por IA",
+    "subtitle": "Monitorea y optimiza la visibilidad de tu marca en ChatGPT, Claude, Perplexity y Gemini. El Ahrefs/SEMrush de la búsqueda por IA.",
+    "ctaPrimary": "Empezar Ahora",
+    "ctaSecondary": "Contáctenos",
+    "trust": "Sin tarjeta de crédito • 14 días gratis • Cancela cuando quieras"
+  },
+  "socialProof": {
+    "title": "Más de 2,000 marcas innovadoras confían en nosotros"
+  },
+  "problem": {
+    "title": "La confianza de equipos que dominan la búsqueda IA",
+    "subtitle": "GeoRank ayuda a equipos de marketing a maximizar la visibilidad de su marca en ChatGPT, Claude, Perplexity y Gemini con monitoreo potenciado por IA e insights accionables.",
+    "stats": {
+      "brands": "2,000+",
+      "brandsLabel": "Marcas",
+      "mentions": "1M+",
+      "mentionsLabel": "Menciones",
+      "platforms": "4",
+      "platformsLabel": "Plataformas",
+      "insights": "<24h",
+      "insightsLabel": "Primeros Insights"
+    }
+  },
+  "features": {
+    "title": "Todo lo que necesitas para dominar la búsqueda IA",
+    "subtitle": "Todas las herramientas e insights necesarios para monitorear y optimizar la visibilidad de tu marca en plataformas de IA. Toma el control de tu presencia en búsqueda IA con nuestras soluciones integrales.",
+    "items": [
+      {
+        "title": "Monitoreo en Tiempo Real",
+        "description": "Rastrea las menciones de tu marca en ChatGPT, Claude, Perplexity y Gemini. Sabe al instante cuando la IA comienza—o deja de—recomendarte."
+      },
+      {
+        "title": "Inteligencia Competitiva",
+        "description": "Ve exactamente a quién recomienda la IA en lugar de ti. Entiende por qué los competidores rankean más alto y qué contenido los hace citables."
+      },
+      {
+        "title": "Recomendaciones Accionables",
+        "description": "Obtén acciones específicas y priorizadas para mejorar tu visibilidad en IA. No solo datos—pasos claros para implementar hoy."
+      },
+      {
+        "title": "Puntuación de Visibilidad",
+        "description": "Rastrea tu GEO Score a lo largo del tiempo. Ve cómo las optimizaciones impactan tu descubribilidad en IA con métricas claras de antes/después."
+      },
+      {
+        "title": "Alertas Instantáneas",
+        "description": "Recibe notificaciones cuando tu visibilidad cambie, cuando los competidores ganen terreno, o cuando surjan nuevas oportunidades."
+      },
+      {
+        "title": "Reportes Automatizados",
+        "description": "Reportes semanales y mensuales entregados a tu correo. Comparte el progreso con stakeholders sin mover un dedo."
+      },
+      {
+        "title": "Integraciones y API",
+        "description": "Conecta con Slack, Zapier y más. Acceso completo a la API para crear flujos de trabajo y dashboards personalizados."
+      }
+    ]
+  },
+  "integrationsSection": {
+    "tagline": "Integraciones",
+    "title": "Conecta Tu Flujo de Trabajo con Integraciones Poderosas",
+    "subtitle": "Optimiza tu flujo de trabajo de visibilidad IA con integraciones perfectas. Recibe notificaciones, automatiza acciones y conecta GeoRank con las herramientas que tu equipo ya usa.",
+    "cta": "Comienza Gratis",
+    "items": [
+      {
+        "name": "Slack",
+        "description": "Recibe notificaciones en tiempo real en tus canales de Slack cuando tu marca sea mencionada o cambien los rankings en plataformas IA."
+      },
+      {
+        "name": "Discord",
+        "description": "Recibe alertas instantáneas en tu servidor de Discord con embeds enriquecidos cuando tus métricas de visibilidad IA cambien."
+      },
+      {
+        "name": "Zapier",
+        "description": "Conecta GeoRank con miles de apps. Automatiza flujos de trabajo y activa acciones basadas en eventos de visibilidad IA."
+      },
+      {
+        "name": "Webhooks",
+        "description": "Envía datos a cualquier endpoint personalizado. Construye tus propias integraciones con payloads webhook firmados con HMAC."
+      },
+      {
+        "name": "Notificaciones Email",
+        "description": "Recibe actualizaciones detalladas por email y resúmenes semanales sobre el rendimiento de visibilidad IA de tu marca."
+      },
+      {
+        "name": "Google Analytics",
+        "description": "Rastrea el tráfico de referencia IA y mide cómo la visibilidad en búsqueda IA se traduce en visitas reales a tu sitio."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "Comienza en menos de 2 minutos",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Agrega tu marca",
+        "description": "Ingresa tu dominio y las keywords que importan para tu negocio. Nosotros nos encargamos del resto."
+      },
+      {
+        "number": "02",
+        "title": "Consultamos las plataformas de IA",
+        "description": "Nuestro sistema consulta automáticamente ChatGPT, Claude, Perplexity y Gemini con prompts relevantes—cientos de veces por día."
+      },
+      {
+        "number": "03",
+        "title": "Obtén insights y actúa",
+        "description": "Ve dónde apareces, dónde no, y exactamente qué hacer al respecto. Recomendaciones accionables, no solo dashboards."
+      }
+    ]
+  },
+  "dashboardPreview": {
+    "title": "Insights poderosos. Cero complejidad.",
+    "subtitle": "Un dashboard que te muestra lo que importa. Sin necesidad de doctorado.",
+    "metrics": {
+      "geoScore": "GEO Score: 73/100",
+      "mentions": "Menciones IA: 847 este mes",
+      "competitor": "Top competidor: Notion (89/100)"
+    }
+  },
+  "testimonials": {
+    "tagline": "Nuestros Clientes",
+    "title": "Mira Lo Que Dicen Nuestros Clientes",
+    "subtitle": "Esto es lo que algunos de nuestros clientes dicen sobre nuestra plataforma.",
+    "cta": "Ver Todas las Historias",
+    "ctaLess": "Mostrar Menos",
+    "items": [
+      {
+        "quote": "La visibilidad en IA es el nuevo campo de batalla para las marcas, y GeoRank nos dio la ventaja. Aumentamos nuestras menciones en ChatGPT un 340% en solo 8 semanas.",
+        "author": "Charolette Hanlin",
+        "role": "Co-Fundadora, NovaBrand"
+      },
+      {
+        "quote": "Solo el análisis de competidores vale 10x el precio. Podemos ver exactamente por qué otros son recomendados sobre nosotros y qué hacer al respecto.",
+        "author": "Novák Balázs",
+        "role": "Co-Fundador, ScaleUp Digital"
+      },
+      {
+        "quote": "Las recomendaciones accionables de GeoRank transformaron nuestra estrategia de contenido. Pasamos de ser invisibles a top-3 en las respuestas de Claude.",
+        "author": "Orosz Boldizsár",
+        "role": "Fundador, ContentFlow"
+      },
+      {
+        "quote": "El seguimiento del GEO Score es brillante. Finalmente podemos medir cómo nuestras optimizaciones impactan la descubribilidad en IA con métricas claras de antes/después.",
+        "author": "Floyd Miles",
+        "role": "Co-Fundador, GrowthHQ"
+      },
+      {
+        "quote": "Finalmente, una herramienta que entiende el futuro de la búsqueda. Nuestro tráfico orgánico de referencias de IA ahora es el 15% del total.",
+        "author": "Darrell Steward",
+        "role": "Fundador, BrightPath"
+      },
+      {
+        "quote": "Desde que usamos GeoRank, nuestra marca es mencionada consistentemente en ChatGPT, Claude y Perplexity. El ROI habla por sí solo.",
+        "author": "Devon Lane",
+        "role": "Marketing, DataPulse"
+      },
+      {
+        "quote": "Consolidamos todo nuestro stack de monitoreo IA en GeoRank—los reportes y el seguimiento de visibilidad finalmente son claros.",
+        "author": "Jenny Wilson",
+        "role": "CFO, Pinnacle Labs"
+      },
+      {
+        "quote": "Solo los reportes automatizados pagaron la suscripción en menos de un mes. A nuestros ejecutivos les encantan los resúmenes semanales.",
+        "author": "Jacob Jones",
+        "role": "VP Ops, Horizon Tech"
+      },
+      {
+        "quote": "La integración de GeoRank con Slack significa que nuestro equipo detecta cada mención en el momento. El tiempo de respuesta pasó de días a horas.",
+        "author": "Eleanor Pena",
+        "role": "Head of Product, CloudBase"
+      },
+      {
+        "quote": "Nuestro equipo de marketing finalmente disfruta las revisiones mensuales. Los gráficos de tendencia del GEO Score hacen que comunicar el progreso sea fácil.",
+        "author": "Courtney Henry",
+        "role": "Marketing Lead, Vantage AI"
+      },
+      {
+        "quote": "La plataforma nos dio visibilidad en búsqueda IA que no sabíamos que nos faltaba. Un cambio total para nuestra estrategia de contenido.",
+        "author": "Leslie Alexander",
+        "role": "Director, NexGen Digital"
+      },
+      {
+        "quote": "Desde seguimiento de keywords hasta benchmarks de competidores—todo vive en un solo dashboard ahora. Exactamente lo que necesitábamos.",
+        "author": "Guy Hawkins",
+        "role": "Fundador, LaunchPad Co"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Precios simples y transparentes",
+    "subtitle": "Comienza gratis. Actualiza cuando estés listo.",
+    "monthly": "Mensual",
+    "yearly": "Anual",
+    "yearlySave": "Ahorra 20%",
+    "perMonth": "/mes",
+    "mostPopular": "Más Popular",
+    "startTrial": "Prueba gratis",
+    "getStarted": "Prueba gratis",
+    "contactSales": "Contactar Ventas",
+    "custom": "Personalizado",
+    "trialNote": "Todos los planes pagos son gratis por 14 días. Sin tarjeta de crédito.",
+    "plans": {
+      "free": {
+        "name": "Free",
+        "price": "0",
+        "yearlyPrice": "0",
+        "description": "Comienza con monitoreo básico de visibilidad IA",
+        "features": [
+          "1 dominio",
+          "3 keywords rastreadas",
+          "Reportes mensuales",
+          "Monitoreo ChatGPT + Gemini",
+          "50 consultas/mes"
+        ]
+      },
+      "first_movers": {
+        "name": "First Movers",
+        "price": "5",
+        "yearlyPrice": "4",
+        "description": "Plan de early adopter con funciones esenciales",
+        "features": [
+          "1 dominio",
+          "15 keywords rastreadas",
+          "Reportes semanales",
+          "Monitoreo ChatGPT + Gemini",
+          "1 competidor",
+          "Recomendaciones IA",
+          "200 consultas/mes"
+        ]
+      },
+      "starter": {
+        "name": "Starter",
+        "price": "49",
+        "yearlyPrice": "39",
+        "description": "Para marcas serias sobre visibilidad IA",
+        "features": [
+          "2 dominios",
+          "50 keywords rastreadas",
+          "Reportes semanales",
+          "4 plataformas IA",
+          "3 competidores",
+          "Recomendaciones IA",
+          "Acceso API",
+          "3 miembros del equipo",
+          "1,000 consultas/mes"
+        ]
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "99",
+        "yearlyPrice": "79",
+        "description": "Para marcas en crecimiento serias sobre visibilidad IA",
+        "features": [
+          "5 dominios",
+          "200 keywords rastreadas",
+          "Reportes diarios",
+          "Las 6 plataformas IA",
+          "10 competidores",
+          "Recomendaciones IA",
+          "Acceso API",
+          "Integraciones",
+          "10 miembros del equipo",
+          "10,000 consultas/mes"
+        ]
+      },
+      "agency": {
+        "name": "Agencia",
+        "price": "249",
+        "yearlyPrice": "199",
+        "description": "Para agencias y equipos grandes",
+        "features": [
+          "15 dominios",
+          "500 keywords rastreadas",
+          "Reportes diarios",
+          "Las 6 plataformas IA",
+          "50 competidores",
+          "Recomendaciones IA",
+          "Acceso API",
+          "Integraciones",
+          "50 miembros del equipo",
+          "50,000 consultas/mes"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "0",
+        "yearlyPrice": "0",
+        "description": "Solución personalizada para grandes organizaciones",
+        "features": [
+          "Dominios ilimitados",
+          "Keywords ilimitadas",
+          "Monitoreo en tiempo real",
+          "Las 6 plataformas IA",
+          "Competidores ilimitados",
+          "Acceso API",
+          "Integraciones",
+          "Miembros ilimitados",
+          "Account manager dedicado",
+          "SLA personalizado"
+        ]
+      }
+    }
+  },
+  "faq": {
+    "tagline": "FAQ",
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Todo lo que necesitas saber sobre GeoRank y cómo ayuda a tu marca a dominar los resultados de búsqueda IA.",
+    "items": [
+      {
+        "question": "¿Qué plataformas de IA rastrean?",
+        "answer": "Actualmente monitoreamos ChatGPT, Claude, Perplexity, Google Gemini, DeepSeek y más—siempre usando los modelos más recientes y robustos disponibles. Agregamos nuevas plataformas continuamente a medida que ganan cuota de mercado."
+      },
+      {
+        "question": "¿Con qué frecuencia se actualizan los datos?",
+        "answer": "GeoRank funciona de dos formas: las consultas de keywords y recomendaciones se generan basándose en los datos de entrenamiento de cada modelo de IA, dándote una imagen base de tu visibilidad. Para insights más profundos, nuestro sistema realiza una investigación profunda en tiempo real—analizando tus dominios, keywords y recomendaciones—para generar un informe completo sobre la presencia de tu marca en IA.\n\nLa frecuencia depende de tu plan: Free actualiza mensualmente, First Movers y Starter semanalmente, Pro y Agency diariamente, y Enterprise hasta cada hora."
+      },
+      {
+        "question": "¿Qué es un \"GEO Score\"?",
+        "answer": "Tu GEO Score (0-100) mide qué tan frecuente y prominentemente la IA menciona tu marca para tus keywords rastreadas. Más alto es mejor."
+      },
+      {
+        "question": "¿Puedo rastrear competidores?",
+        "answer": "¡Sí! El rastreo de competidores comienza desde el plan First Movers (1 competidor) y escala: Starter rastrea 3, Pro rastrea 10, y Agency hasta 50. Los planes Enterprise tienen rastreo de competidores prácticamente ilimitado. Ve exactamente a quién recomienda la IA en lugar de ti y por qué."
+      },
+      {
+        "question": "¿Puedo probar antes de suscribirme?",
+        "answer": "¡Sí! Ofrecemos un plan gratuito para que puedas explorar GeoRank sin compromiso. Cuando estés listo para actualizar, puedes cancelar en cualquier momento—sin contratos, sin tarifas de cancelación."
+      },
+      {
+        "question": "¿Hay una API?",
+        "answer": "El acceso a la API está disponible desde el plan Starter en adelante. Puedes integrar datos de GeoRank en tus dashboards, flujos de trabajo y herramientas personalizadas."
+      },
+      {
+        "question": "¿Agregan nuevas funcionalidades y modelos de IA con el tiempo?",
+        "answer": "¡Absolutamente! GeoRank es un producto en etapa temprana con un ambicioso roadmap a mediano plazo. Actualizamos nuestros modelos de IA con cada nueva generación lanzada por cada plataforma, asegurando que siempre tengas los modelos más recientes y capaces.\n\nEstamos construyendo activamente: desgloses de visibilidad por modelo, región y audiencia, puntuación de visibilidad de marca, métricas de visibilidad por fuente, rastreo de citaciones, prompts sugeridos, y mucho más. Nuevas funcionalidades se lanzan regularmente—mantente atento."
+      }
+    ]
+  },
+  "blogSection": {
+    "tagline": "Nuestro Blog",
+    "title": "Últimas Publicaciones",
+    "subtitle": "Estrategias e insights sobre visibilidad en búsqueda IA, optimización GEO y el futuro del descubrimiento de marcas.",
+    "items": [
+      {
+        "category": "Estrategia GEO",
+        "title": "Cómo la Búsqueda IA Está Transformando el Descubrimiento de Marcas en 2025",
+        "description": "Descubre cómo ChatGPT, Claude y Perplexity están cambiando la forma en que los consumidores encuentran y eligen marcas—y qué puedes hacer al respecto.",
+        "author": "Alex Rivera",
+        "date": "15 Ene, 2025"
+      },
+      {
+        "category": "Guías",
+        "title": "La Guía Completa de Optimización para Motores Generativos",
+        "description": "Todo lo que necesitas saber sobre optimizar la visibilidad de tu marca en motores de búsqueda impulsados por IA y asistentes conversacionales.",
+        "author": "Sarah Chen",
+        "date": "8 Ene, 2025"
+      },
+      {
+        "category": "Visibilidad IA",
+        "title": "Por Qué Tu Marca es Invisible para ChatGPT (Y Cómo Solucionarlo)",
+        "description": "La mayoría de las marcas no aparecen en las recomendaciones de IA. Aprende los factores clave que determinan si los modelos de IA mencionan tu marca.",
+        "author": "Marcus Johnson",
+        "date": "28 Dic, 2024"
+      },
+      {
+        "category": "Analíticas",
+        "title": "Rastreando Menciones IA: Las Métricas Que Realmente Importan",
+        "description": "No todas las menciones de IA son iguales. Aprende en qué métricas enfocarte y cómo medir tu verdadera visibilidad en búsqueda IA.",
+        "author": "Elena Costa",
+        "date": "20 Dic, 2024"
+      }
+    ]
+  },
+  "keyFeatures": {
+    "tagline": "Capacidades",
+    "title": "Construido para la visibilidad IA moderna",
+    "subtitle": "Todas las herramientas que necesitas para monitorear, analizar y optimizar tu presencia en plataformas de IA.",
+    "items": [
+      {
+        "title": "Keywords",
+        "description": "Configura las keywords que importan para tu negocio. Consultamos plataformas de IA con prompts relevantes cientos de veces al día."
+      },
+      {
+        "title": "Insights Basados en Datos",
+        "description": "Usa datos reales para entender qué hace que la IA te recomiende a ti o a tus competidores. Encuentra patrones, no suposiciones."
+      },
+      {
+        "title": "Dominios",
+        "description": "Agrega todos tus dominios y rastrea cómo cada uno se desempeña en plataformas de IA. Soporte multi-dominio integrado."
+      },
+      {
+        "title": "Fuentes Clave",
+        "description": "Descubre qué sitios web y fuentes usa la IA para formar sus recomendaciones. Sabe dónde enfocar tus esfuerzos."
+      }
+    ]
+  },
+  "reportsSection": {
+    "title": "Comparte insights, no hojas de cálculo",
+    "subtitle": "Descubre cómo se desempeña tu marca en los motores de respuesta de IA — y encuentra las oportunidades para superar a la competencia.",
+    "cta": "Comenzar a monitorear",
+    "checklistLabel": "Obtén insights sobre:",
+    "checklist": [
+      "Puntuación de Visibilidad IA",
+      "Rankings de Keywords",
+      "Citaciones de Fuentes",
+      "Análisis de Competidores"
+    ]
+  },
+  "cta": {
+    "title": "Haz que tu marca aparezca en",
+    "subtitle": "Monitorea y optimiza cómo las plataformas de IA recomiendan tu marca a millones de usuarios",
+    "button": "Prueba gratis",
+    "ctaSecondary": "Hablar con Ventas"
+  },
+  "footer": {
+    "product": {
+      "title": "Producto",
+      "links": ["Características", "Integraciones", "Precios"]
+    },
+    "company": {
+      "title": "Empresa",
+      "links": ["Nosotros", "Blog", "Contacto"]
+    },
+    "legal": {
+      "title": "Legal y Acceso",
+      "links": ["Política de Privacidad", "Términos de Servicio", "Política de Cookies", "Registrarse", "Iniciar Sesión"]
+    },
+    "copyright": "© 2025 GeoRank. Todos los derechos reservados."
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Monitorea y optimiza la visibilidad de tu marca en la búsqueda por IA.",
+    "geoScore": "GEO Score",
+    "aiMentions": "Menciones IA",
+    "keywordsTracked": "Keywords Rastreadas",
+    "bestRanking": "Mejor Ranking",
+    "thisMonth": "este mes",
+    "vsLastWeek": "vs semana pasada",
+    "vsLastMonth": "vs mes pasado",
+    "limit": "límite",
+    "addKeyword": "Agregar keyword",
+    "upgrade": "Mejorar Plan",
+    "trendingUp": "Tendencia al alza este mes",
+    "trendingDown": "Tendencia a la baja este mes",
+    "trendingStable": "Desempeño estable",
+    "geoScoreContext": "GEO Score en los últimos 7 días",
+    "mentionsContext": "Menciones IA en los últimos 30 dias",
+    "keywordsContext": "Límite basado en tu plan",
+    "rankingContext": "Promedio de posición en el periodo",
+    "visibility": {
+      "title": "Visibilidad en el Tiempo",
+      "subtitle": "Tendencia de tu GEO Score en todas las plataformas",
+      "upgradeTitle": "Mejora tu plan para ver tendencias de visibilidad",
+      "upgradeDescription": "Rastrea tu visibilidad en IA a lo largo del tiempo con un plan de pago"
+    },
+    "recentMentions": {
+      "title": "Menciones Recientes",
+      "subtitle": "Últimas respuestas de IA mencionando tu marca",
+      "viewAll": "Ver todas las menciones",
+      "mentioned": "Mencionado",
+      "notMentioned": "No mencionado",
+      "deletedKeyword": "Keyword eliminada"
+    },
+    "topKeywords": {
+      "title": "Top Keywords",
+      "subtitle": "Tus mejores keywords por GEO Score",
+      "viewAll": "Ver todas las keywords",
+      "keyword": "Keyword",
+      "score": "Score",
+      "trend": "Tendencia",
+      "status": "Estado"
+    },
+    "competitors": {
+      "title": "Comparación de Competidores",
+      "subtitle": "Cómo te comparas con competidores rastreados",
+      "viewDetails": "Ver detalles de competidores",
+      "upgradeTitle": "Mejora tu plan para rastrear competidores",
+      "upgradeDescription": "Compara tu marca con competidores con un plan de pago"
+    }
+  },
+  "auth": {
+    "sessionExpired": {
+      "title": "Sesión expirada",
+      "description": "Inicie sesión para continuar",
+      "button": "Ir al Login"
+    },
+    "login": {
+      "title": "Bienvenido de vuelta",
+      "subtitle": "Inicia sesión en tu cuenta",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "tu@empresa.com",
+      "password": "Contraseña",
+      "passwordPlaceholder": "••••••••",
+      "forgotPassword": "¿Olvidaste tu contraseña?",
+      "button": "Iniciar sesión",
+      "orContinue": "o continúa con",
+      "google": "Continuar con Google",
+      "noAccount": "¿No tienes cuenta?",
+      "signUp": "Regístrate"
+    },
+    "signup": {
+      "title": "Crea tu cuenta",
+      "subtitle": "Prueba gratis por 14 días",
+      "name": "Nombre completo",
+      "namePlaceholder": "Juan Pérez",
+      "email": "Email de trabajo",
+      "emailPlaceholder": "tu@empresa.com",
+      "password": "Contraseña",
+      "passwordPlaceholder": "••••••••",
+      "passwordHelper": "Mínimo 8 caracteres",
+      "terms": "Acepto los Términos de Servicio y Política de Privacidad",
+      "button": "Crear cuenta",
+      "orContinue": "o continúa con",
+      "google": "Continuar con Google",
+      "hasAccount": "¿Ya tienes cuenta?",
+      "logIn": "Inicia sesión"
+    },
+    "forgotPassword": {
+      "title": "Restablecer contraseña",
+      "subtitle": "Ingresa tu email y te enviaremos un enlace para restablecer",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "tu@empresa.com",
+      "button": "Enviar enlace",
+      "backToLogin": "Volver al login"
+    }
+  },
+  "keywords": {
+    "title": "Keywords",
+    "subtitle": "Gestiona y monitorea tus keywords rastreadas",
+    "addKeyword": "Agregar Keyword",
+    "allDomains": "Todos los Dominios",
+    "allPlatforms": "Todas las Plataformas",
+    "allStatus": "Todos los Estados",
+    "sortBy": "Ordenar por",
+    "score": "Score",
+    "recent": "Reciente",
+    "alphabetical": "Alfabético",
+    "table": {
+      "keyword": "Keyword",
+      "domain": "Dominio",
+      "platforms": "Plataformas",
+      "score": "Score",
+      "trend": "Tendencia (7d)",
+      "mentions": "Menciones",
+      "status": "Estado",
+      "autoQuery": "Auto",
+      "actions": "Acciones"
+    },
+    "status": {
+      "ranking": "Rankeando",
+      "improving": "Mejorando",
+      "needsWork": "Necesita trabajo",
+      "notRanking": "Sin ranking"
+    },
+    "addModal": {
+      "title": "Agregar Nueva Keyword",
+      "subtitle": "Ingresa una keyword o frase para rastrear en plataformas de IA",
+      "label": "Keyword",
+      "placeholder": "ej., \"mejor herramienta de gestión de proyectos\"",
+      "helper": "Usa consultas en lenguaje natural que tus clientes podrían preguntar a la IA",
+      "platformsLabel": "Plataformas a monitorear",
+      "domainLabel": "Dominio",
+      "domainPlaceholder": "Selecciona un dominio",
+      "cancel": "Cancelar",
+      "add": "Agregar Keyword"
+    },
+    "generateQuery": {
+      "trigger": "Generar Consulta Ahora",
+      "title": "Generar Consulta Ahora",
+      "subtitle": "Selecciona keywords y plataformas de IA para consultar",
+      "usageTitle": "Uso Mensual",
+      "used": "usadas",
+      "keywordsSection": "Keywords",
+      "selectAll": "Seleccionar Todas",
+      "deselectAll": "Deseleccionar Todas",
+      "platformsSection": "Plataformas de IA",
+      "remaining": "{count} consultas restantes después",
+      "overLimit": "Consultas insuficientes. Necesitas {needed} pero solo tienes {available}.",
+      "quotaExhausted": "Necesitas {needed}, pero ya usaste toda tu cuota mensual.",
+      "generate": "Generar",
+      "generating": "Generando...",
+      "cancel": "Cancelar"
+    },
+    "empty": {
+      "title": "Sin keywords aún",
+      "description": "Agrega tu primera keyword para comenzar a rastrear tu visibilidad en IA",
+      "button": "Agregar Tu Primera Keyword"
+    }
+  },
+  "domains": {
+    "title": "Dominios",
+    "subtitle": "Gestiona los dominios que estás rastreando en plataformas de IA",
+    "addDomain": "Agregar Dominio",
+    "usage": "usados",
+    "geoScore": "GEO Score",
+    "keywords": "keywords",
+    "lastScanned": "Último análisis",
+    "never": "Nunca",
+    "addModal": {
+      "title": "Agregar Dominio",
+      "subtitle": "Ingresa el dominio que deseas rastrear",
+      "urlLabel": "URL del Dominio",
+      "urlPlaceholder": "ejemplo.com",
+      "nameLabel": "Nombre de Visualización",
+      "namePlaceholder": "Mi Empresa",
+      "cancel": "Cancelar",
+      "add": "Agregar Dominio"
+    },
+    "editModal": {
+      "title": "Editar Dominio",
+      "subtitle": "Actualiza los detalles del dominio"
+    },
+    "deleteConfirm": {
+      "title": "Eliminar Dominio",
+      "description": "Esto eliminará permanentemente este dominio y desasociará todas las keywords. Esta acción no se puede deshacer."
+    },
+    "empty": {
+      "title": "Sin dominios aún",
+      "description": "Agrega tu primer dominio para comenzar a rastrear la visibilidad en IA."
+    }
+  },
+  "competitors": {
+    "title": "Competidores",
+    "subtitle": "Rastrea y analiza tu competencia en búsqueda IA",
+    "addCompetitor": "Agregar Competidor",
+    "usage": "competidores rastreados",
+    "upgradeUnlimited": "Actualiza para ilimitados",
+    "pointsAhead": "puntos adelante de ti",
+    "pointsBehind": "puntos detrás de ti",
+    "thisWeek": "esta semana",
+    "keywordsRanking": "keywords rankeando",
+    "mentions": "menciones",
+    "viewAnalysis": "Ver Análisis",
+    "headToHead": {
+      "title": "Comparación Directa",
+      "subtitle": "Ve cómo te comparas en todas las plataformas",
+      "compareWith": "Comparar con"
+    },
+    "insights": {
+      "title": "Por qué {competitor} rankea más alto",
+      "subtitle": "Insights generados por IA basados en análisis de respuestas"
+    },
+    "addModal": {
+      "title": "Agregar Competidor",
+      "label": "Dominio del competidor",
+      "placeholder": "ej., competidor.com",
+      "helper": "Obtendremos su información automáticamente y comenzaremos a rastrear",
+      "cancel": "Cancelar",
+      "add": "Agregar Competidor"
+    }
+  },
+  "reports": {
+    "title": "Reportes",
+    "subtitle": "Insights automatizados entregados a tu correo",
+    "generateNow": "Generar Reporte Ahora",
+    "settings": {
+      "title": "Reportes Programados",
+      "subtitle": "Recibe reportes automáticamente por email",
+      "autoGenerate": "Generar automáticamente",
+      "sendEmail": "Notificaciones por email",
+      "frequency": "Frecuencia",
+      "nextRun": "Próxima ejecución",
+      "lastGenerated": "Último generado",
+      "usage": "Uso",
+      "autoOff": "Desactivado",
+      "weekly": "Reporte Semanal",
+      "weeklyDesc": "Enviado cada lunes a las 9:00 AM",
+      "monthly": "Reporte Mensual",
+      "monthlyDesc": "Enviado el 1ro de cada mes",
+      "lastSent": "Último envío"
+    },
+    "recipients": {
+      "title": "Destinatarios",
+      "placeholder": "Agregar dirección de email",
+      "addRecipient": "Agregar Destinatario",
+      "owner": "Propietario",
+      "upgradeHint": "Mejora a Starter o superior para agregar más destinatarios"
+    },
+    "history": {
+      "title": "Historial de Reportes",
+      "subtitle": "Descarga o previsualiza reportes anteriores",
+      "report": "Reporte",
+      "date": "Fecha",
+      "type": "Tipo",
+      "status": "Estado",
+      "actions": "Acciones",
+      "preview": "Vista previa",
+      "download": "Descargar PDF",
+      "delivered": "Entregado",
+      "generating": "Generando",
+      "empty": "No hay reportes generados aún. Haz clic en 'Generar Reporte Ahora' para crear tu primer reporte."
+    },
+    "preview": {
+      "title": "¿Qué incluye tu reporte?",
+      "includes": [
+        "Resumen y tendencias del GEO Score",
+        "Top keywords",
+        "Movimiento de competidores",
+        "Nuevas oportunidades identificadas",
+        "Acciones recomendadas"
+      ],
+      "downloadSample": "Descargar Reporte de Ejemplo"
+    }
+  },
+  "recommendations": {
+    "title": "Recomendaciones",
+    "subtitle": "Sugerencias basadas en IA para mejorar tu visibilidad",
+    "generate": "Generar",
+    "potentialImpact": "Impacto Potencial",
+    "allComplete": "¡Todo completado!",
+    "progress": {
+      "title": "Completadas",
+      "of": "de"
+    },
+    "status": {
+      "completed": "Completada",
+      "inProgress": "En Progreso"
+    },
+    "empty": {
+      "title": "Sin recomendaciones aún",
+      "description": "Las recomendaciones aparecerán cuando hayamos analizado tus datos de visibilidad en IA"
+    },
+    "actions": {
+      "start": "Iniciar",
+      "markComplete": "Marcar como Completada",
+      "updating": "Actualizando..."
+    }
+  },
+  "billing": {
+    "title": "Facturación",
+    "subtitle": "Gestiona tu suscripción y métodos de pago",
+    "currentPlan": {
+      "title": "Plan Actual",
+      "renews": "Renueva",
+      "changePlan": "Cambiar Plan",
+      "upgrade": "Mejorar Plan",
+      "manageSub": "Gestionar Suscripción",
+      "cancel": "Cancelar Suscripción",
+      "noPlanTitle": "Información del plan no disponible",
+      "noPlanDesc": "Por favor, inténtalo de nuevo más tarde o contacta soporte"
+    },
+    "usage": {
+      "keywords": "Keywords",
+      "queries": "Consultas de Keywords (mensual)",
+      "queries_daily": "Consultas de Keywords (diario)",
+      "domains": "Dominios",
+      "competitors": "Competidores",
+      "reports": "Informes (mensual)",
+      "reports_daily": "Informes (diario)",
+      "recommendations": "Recomendaciones (mensual)",
+      "used": "usados"
+    },
+    "paymentMethod": {
+      "title": "Método de Pago",
+      "expires": "Expira",
+      "update": "Actualizar Método de Pago",
+      "billingEmail": "Email de facturación",
+      "updateEmail": "Actualizar Email"
+    },
+    "invoices": {
+      "title": "Facturas",
+      "date": "Fecha",
+      "description": "Descripción",
+      "amount": "Monto",
+      "status": "Estado",
+      "download": "Descargar",
+      "paid": "Pagado",
+      "viewAll": "Ver todas las facturas"
+    },
+    "downgrade": {
+      "title": "Advertencia de Degradación",
+      "description": "Degradar a {plan} resultará en los siguientes cambios:",
+      "keywordsArchived": "{count} palabras clave serán archivadas",
+      "competitorsArchived": "{count} competidores serán archivados",
+      "domainsArchived": "{count} dominios serán archivados",
+      "membersDeactivated": "{count} miembros del equipo serán desactivados",
+      "loseTeam": "La colaboración en equipo será desactivada",
+      "loseAPI": "El acceso a la API será desactivado",
+      "loseIntegrations": "Las integraciones serán desactivadas",
+      "loseCompetitors": "El seguimiento de competidores será desactivado",
+      "understand": "Entiendo que estos cambios no se pueden deshacer",
+      "confirm": "Proceder con la Degradación",
+      "cancel": "Cancelar"
+    }
+  },
+  "onboarding": {
+    "step1": {
+      "progress": "Paso 1 de 3 — Tu Marca",
+      "title": "Configuremos tu marca",
+      "subtitle": "Comenzaremos a rastrear cómo la IA ve tu dominio",
+      "label": "Tu dominio",
+      "placeholder": "tumarca.com",
+      "helper": "No incluyas https:// o www",
+      "continue": "Continuar"
+    },
+    "step2": {
+      "progress": "Paso 2 de 3 — Keywords",
+      "title": "¿Para qué debería recomendarte la IA?",
+      "subtitle": "Agrega las keywords y frases que tus clientes preguntan a la IA",
+      "keywordLabel": "Keyword",
+      "placeholder": "ej., \"mejor herramienta de gestión de proyectos\"",
+      "addAnother": "Agregar otra keyword",
+      "suggestions": "Sugeridas para tu dominio:",
+      "continue": "Continuar"
+    },
+    "step3": {
+      "progress": "Paso 3 de 3 — Competidores",
+      "title": "¿Quiénes son tus competidores?",
+      "subtitle": "Rastrea cómo te comparas con otros en tu espacio",
+      "competitorLabel": "Competidor",
+      "placeholder": "competidor.com",
+      "addAnother": "Agregar otro competidor",
+      "skip": "Saltar por ahora",
+      "start": "Comenzar a Rastrear"
+    },
+    "complete": {
+      "title": "¡Todo listo!",
+      "subtitle": "Estamos analizando tu visibilidad en IA en ChatGPT, Claude, Perplexity y Gemini. Esto usualmente toma 5-10 minutos.",
+      "whatNext": "¿Qué sigue?",
+      "steps": [
+        "Consultamos las plataformas de IA con tus keywords",
+        "Analizamos dónde apareces (y dónde no)",
+        "Recibirás tu primer GEO Score y recomendaciones"
+      ],
+      "goToDashboard": "Ir al Dashboard"
+    }
+  },
+  "sidebar": {
+    "main": "Principal",
+    "dashboard": "Dashboard",
+    "domains": "Dominios",
+    "keywords": "Keywords",
+    "competitors": "Competidores",
+    "reports": "Reportes",
+    "recommendations": "Recomendaciones",
+    "settings": "Configuración",
+    "preferences": "Preferencias",
+    "team": "Equipo",
+    "billing": "Facturación",
+    "apiKeys": "API Keys",
+    "integrations": "Integraciones",
+    "scheduling": "Programación",
+    "profile": "Perfil"
+  },
+  "scheduling": {
+    "title": "Programación",
+    "subtitle": "Gestiona consultas automáticas y generación de informes",
+    "settingsDesc": "Controla cuándo se ejecutan las consultas y los informes automáticos",
+    "keywords": {
+      "title": "Consultas de Palabras clave",
+      "autoQueryCount": "{count} de {total} palabras clave con consulta automática",
+      "showMore": "Ver {count} más",
+      "showLess": "Ver menos",
+      "manageKeywords": "Ver todas las keywords"
+    },
+    "reports": {
+      "title": "Informes",
+      "autoGenerate": "Generar informes automáticamente",
+      "sendEmail": "Enviar informes por correo"
+    },
+    "recommendations": {
+      "title": "Recomendaciones",
+      "autoGenerate": "Generar recomendaciones automáticamente",
+      "disabled": "No disponible en tu plan"
+    },
+    "frequency": "Frecuencia",
+    "nextRun": "Próxima ejecución",
+    "lastGenerated": "Último generado",
+    "lastQueried": "Última consulta",
+    "used": "{used} / {limit} este mes",
+    "neverRun": "Nunca",
+    "autoOff": "Generación automática desactivada",
+    "planBadge": "{frequency}",
+    "enabled": "Activado",
+    "notEnabled": "Desactivado"
+  },
+  "preferences": {
+    "title": "Preferencias",
+    "subtitle": "Administra tus preferencias de idioma y visualización",
+    "languageTitle": "Idioma",
+    "languageDescription": "Elige tu idioma preferido para la interfaz y el contenido generado por IA",
+    "save": "Guardar preferencia",
+    "saved": "Preferencia guardada con éxito",
+    "notificationsTitle": "Notificaciones por email",
+    "notificationsDescription": "Elige qué eventos activan notificaciones por email",
+    "queryEmailLabel": "Resultados de consultas de keywords",
+    "queryEmailDescription": "Recibe un email agrupado cuando las consultas de IA finalicen para tus keywords",
+    "recommendationEmailLabel": "Actualizaciones de recomendaciones",
+    "recommendationEmailDescription": "Recibe una notificación cuando se generen nuevas recomendaciones de IA para tu workspace"
+  },
+  "profile": {
+    "title": "Perfil",
+    "subtitle": "Gestiona la configuración de tu cuenta y workspace",
+    "name": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "save": "Guardar",
+    "saved": "Guardado exitosamente",
+    "workspace": "Workspace",
+    "workspaceName": "Nombre del Workspace",
+    "workspaceDesc": "El nombre de tu workspace visible para miembros del equipo",
+    "email": "Correo electrónico",
+    "currentEmail": "Correo actual",
+    "changeEmail": "Cambiar Correo",
+    "newEmail": "Nuevo Correo",
+    "newEmailPlaceholder": "nuevo@ejemplo.com",
+    "currentPassword": "Contraseña Actual",
+    "sendCode": "Enviar Código de Verificación",
+    "codeSent": "Código de verificación enviado a tu correo",
+    "verificationCode": "Código de Verificación",
+    "confirmChange": "Confirmar Cambio",
+    "emailChanged": "Correo cambiado exitosamente",
+    "password": "Contraseña",
+    "changePassword": "Cambiar Contraseña",
+    "newPassword": "Nueva Contraseña",
+    "confirmPassword": "Confirmar Contraseña",
+    "passwordChanged": "Contraseña cambiada exitosamente",
+    "dangerZone": "Zona de Peligro",
+    "deleteAccount": "Eliminar Cuenta",
+    "deleteDesc": "Contacta a soporte para eliminar tu cuenta",
+    "ownerOnly": "Solo los propietarios del workspace pueden cambiar esto"
+  },
+  "mentions": {
+    "detailTitle": "Detalles del Análisis IA",
+    "ranked": "Posición #{position} de {total}",
+    "notRanked": "No clasificado entre {total} recomendaciones",
+    "recommendations": "Recomendaciones IA",
+    "insights": "Insights de Consulta",
+    "intent": "Intención",
+    "format": "Formato",
+    "targetDomain": "Tu dominio",
+    "viewDomain": "Visitar sitio",
+    "noData": "No hay datos de recomendaciones disponibles",
+    "queriesTitle": "Historial de Consultas",
+    "queriesSubtitle": "Todas las consultas IA para esta keyword",
+    "noQueries": "Aún no hay consultas para esta keyword",
+    "query": "Consulta",
+    "platform": "Plataforma",
+    "result": "Resultado",
+    "date": "Fecha",
+    "mentioned": "Mencionado",
+    "notMentioned": "No mencionado",
+    "viewDetails": "Ver detalles"
+  },
+  "team": {
+    "subtitle": "Gestiona los miembros del equipo y permisos",
+    "inviteMember": "Invitar Miembro",
+    "inviteTitle": "Invitar Miembro del Equipo",
+    "inviteDesc": "Envía una invitación para unirse a tu equipo.",
+    "emailLabel": "Dirección de email",
+    "roleLabel": "Rol",
+    "selectRole": "Seleccionar rol",
+    "cancel": "Cancelar",
+    "sending": "Enviando...",
+    "sendInvite": "Enviar Invitación",
+    "membersTitle": "Miembros del Equipo ({count})",
+    "promoteAdmin": "Promover a Admin",
+    "setEditor": "Establecer como Editor",
+    "setMember": "Establecer como Miembro",
+    "setViewer": "Establecer como Visor",
+    "removeFromTeam": "Eliminar del equipo",
+    "removeTitle": "Eliminar Miembro del Equipo",
+    "removeDesc": "¿Estás seguro de que quieres eliminar a este miembro del equipo? Perderá acceso al workspace.",
+    "removing": "Eliminando...",
+    "remove": "Eliminar",
+    "roles": {
+      "owner": "Propietario",
+      "admin": "Administrador",
+      "editor": "Editor",
+      "member": "Miembro",
+      "viewer": "Visor",
+      "ownerDesc": "Acceso total a todo",
+      "adminDesc": "Todo excepto facturación",
+      "editorDesc": "Crear y gestionar contenido",
+      "memberDesc": "Acceso básico",
+      "viewerDesc": "Acceso solo lectura"
+    },
+    "invite": {
+      "title": "Invitación de Equipo",
+      "joinWorkspace": "Unirse a {workspace}",
+      "accept": "Aceptar Invitación",
+      "expired": "Esta invitación ha expirado o es inválida",
+      "loginRequired": "Regístrate o inicia sesión para aceptar esta invitación",
+      "login": "Iniciar Sesión",
+      "signup": "Registrarse",
+      "accepted": "¡Invitación aceptada! Redirigiendo..."
+    }
+  },
+  "emptyStates": {
+    "teamMembers": "No hay miembros del equipo aún",
+    "teamMembersDesc": "Invita a los miembros de tu equipo a colaborar",
+    "apiKeys": "No hay API keys aún",
+    "apiKeysDesc": "Crea tu primera API key para comenzar",
+    "integrations": "No hay integraciones disponibles",
+    "integrationsDesc": "Vuelve pronto para más integraciones"
+  },
+  "common": {
+    "search": {
+      "placeholder": "Buscar palabras clave, competidores, dominios...",
+      "shortcut": "⌘K",
+      "keywords": "Palabras clave",
+      "competitors": "Competidores",
+      "domains": "Dominios",
+      "allWorkspaces": "Todos los workspaces",
+      "noResults": "No se encontraron resultados",
+      "typeToSearch": "Escribe para buscar..."
+    },
+    "searchPlaceholder": "Buscar keywords, competidores...",
+    "notifications": {
+      "title": "Notificaciones",
+      "markAllRead": "Marcar todas como leídas",
+      "empty": "No hay notificaciones aún",
+      "justNow": "Ahora",
+      "minutesAgo": "hace {count}m",
+      "hoursAgo": "hace {count}h",
+      "daysAgo": "hace {count}d"
+    },
+    "newAlerts": "nuevas alertas",
+    "upgrade": "Actualizar a Pro",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "view": "Ver",
+    "export": "Exportar",
+    "import": "Importar"
+  }
+}

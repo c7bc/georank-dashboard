@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --font-inter: "Inter", system-ui, sans-serif;
+    }
+  </style>
+  <title>GeoRank Dashboard — AI Search Visibility Platform</title>
+  <meta name="description"
+    content="GeoRank dashboard: monitor your GEO Score, track brand mentions in ChatGPT, Claude, Perplexity and Gemini, analyze competitors, and get actionable AI SEO recommendations." />
+  <meta name="robots" content="noindex, nofollow" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GeoRank" />
+  <meta property="og:title" content="GeoRank — SEO for the AI Era" />
+  <meta property="og:description"
+    content="Monitor and optimize your brand's visibility in ChatGPT, Claude, Perplexity, and Gemini — the leading platform for AI search optimization." />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="GeoRank — SEO for the AI Era" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@georank_site" />
+  <meta name="twitter:title" content="GeoRank — SEO for the AI Era" />
+  <meta name="twitter:description"
+    content="Monitor and optimize your brand's visibility in ChatGPT, Claude, Perplexity, and Gemini." />
+  <meta name="twitter:image" content="/og-image.png" />
+  <script defer src="https://analytics.georank.site/script.js"
+    data-website-id="5158bfb3-0993-4b4d-9cd6-71a346746b4c"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+  <style>
+    .woot-widget-holder,
+    .chatwoot-widget-holder,
+    #chatwoot-widget-container,
+    .woot-widget-bubble,
+    .woot--bubble-holder {
+      z-index: 2147483647 !important;
+    }
+
+    .woot-widget-holder,
+    .woot-widget-holder iframe {
+      box-shadow: none !important;
+    }
+  </style>
+  <script>
+    window.chatwootSettings = { "position": "right", "type": "standard", "launcherTitle": "Chat with us", "darkMode": "auto" };
+    (function (d, t) {
+      var BASE_URL = "https://support.georank.site";
+      var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      g.src = BASE_URL + "/packs/js/sdk.js";
+      g.async = true;
+      s.parentNode.insertBefore(g, s);
+      g.onload = function () {
+        window.chatwootSDK.run({
+          websiteToken: 'dehV4FqK8pcq64oQwmn9jh1h',
+          baseUrl: BASE_URL
+        })
+      }
+    })(document, "script");
+  </script>
+</body>
+
+</html>
