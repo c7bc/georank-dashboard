@@ -14,6 +14,15 @@ const initialState: ThemeProviderState = {
 
 export const ThemeProviderContext = React.createContext<ThemeProviderState>(initialState)
 
+function getCookie(name: string): string | null {
+  const match = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'))
+  return match ? match[1] : null
+}
+
+function setCookie(name: string, value: string) {
+  document.cookie = `${name}=${value};path=/;max-age=31536000;SameSite=Lax`
+}
+
 interface ThemeProviderProps {
   children: React.ReactNode
   defaultTheme?: Theme
@@ -27,7 +36,7 @@ export function ThemeProvider({
   ...props
 }: ThemeProviderProps) {
   const [theme, setTheme] = React.useState<Theme>(
-    () => (localStorage.getItem(storageKey) as Theme) || defaultTheme
+    () => (getCookie(storageKey) as Theme) || defaultTheme
   )
 
   React.useEffect(() => {
@@ -51,7 +60,7 @@ export function ThemeProvider({
   const value = {
     theme,
     setTheme: (theme: Theme) => {
-      localStorage.setItem(storageKey, theme)
+      setCookie(storageKey, theme)
       setTheme(theme)
     },
   }
