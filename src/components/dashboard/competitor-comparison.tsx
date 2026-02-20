@@ -142,7 +142,7 @@ export function CompetitorComparison({ data = [] }: CompetitorComparisonProps) {
         </Link>
       </div>
 
-      <div className="overflow-hidden rounded-lg border bg-gradient-to-t from-primary/5 to-card dark:bg-card shadow-xs px-6 pt-8 pb-4">
+      <div className="overflow-hidden rounded-lg border bg-gradient-to-t from-primary/5 to-card dark:bg-card shadow-xs px-2 sm:px-6 pt-8 pb-4">
         {data.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-12 text-muted-foreground">
             <Users className="h-8 w-8 mb-2 opacity-50" />
@@ -155,7 +155,7 @@ export function CompetitorComparison({ data = [] }: CompetitorComparisonProps) {
               <BarChart
                 data={data}
                 layout="vertical"
-                margin={{ left: 140, right: 48 }}
+                margin={{ left: 80, right: 30 }}
               >
                 <CartesianGrid horizontal={false} strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" />
                 <XAxis type="number" domain={[0, 100]} hide />
@@ -164,7 +164,7 @@ export function CompetitorComparison({ data = [] }: CompetitorComparisonProps) {
                   dataKey="name"
                   axisLine={false}
                   tickLine={false}
-                  width={130}
+                  width={70}
                   tick={(tickProps) => <CustomYAxisTick {...tickProps} data={data} />}
                 />
                 <ChartTooltip cursor={{ fill: "rgba(255,255,255,0.02)" }} content={<CompetitorTooltip />} />

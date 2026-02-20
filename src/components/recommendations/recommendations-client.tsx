@@ -262,13 +262,13 @@ export function RecommendationsClient({
               )}
               data-testid={`recommendation-${rec.id}`}
             >
-              <CardContent className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+              <CardContent className="p-4 sm:p-6">
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 shrink-0">
                     <Icon className="h-5 w-5 text-primary" />
                   </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2">
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 flex-wrap">
                       <Badge
                         variant="outline"
                         className={priorityColors[priority]}
@@ -292,8 +292,25 @@ export function RecommendationsClient({
                     <p className="mt-2 text-sm text-accent-emerald">
                       {rec.impact}
                     </p>
+                    <div className="flex items-center gap-2 mt-3 sm:hidden">
+                      {rec.status === "completed" ? (
+                        <CheckCircle2 className="h-6 w-6 text-accent-emerald" />
+                      ) : (
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          disabled={isLoading}
+                          onClick={() =>
+                            handleStatusUpdate(rec.id, getNextStatus(rec.status))
+                          }
+                          data-testid="recommendation-status-toggle"
+                        >
+                          {isLoading ? t("actions.updating") : getButtonLabel(rec.status)}
+                        </Button>
+                      )}
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="hidden sm:flex items-center gap-2 shrink-0">
                     {rec.status === "completed" ? (
                       <CheckCircle2 className="h-6 w-6 text-accent-emerald" />
                     ) : (

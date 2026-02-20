@@ -384,7 +384,7 @@ export function ReportPreviewPage() {
                 </div>
               </div>
 
-              <div className="flex items-end divide-x divide-border/50">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:divide-x sm:divide-border/50">
                 {[
                   {
                     label: "AI Mention Rate",
@@ -398,11 +398,11 @@ export function ReportPreviewPage() {
                     color: "text-foreground",
                   },
                 ].map(({ label, value, color }) => (
-                  <div key={label} className="px-6 first:pl-0">
-                    <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">
+                  <div key={label} className="sm:px-6 sm:first:pl-0">
+                    <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-1 sm:mb-2">
                       {label}
                     </p>
-                    <p className={cn("text-3xl font-bold tabular-nums leading-none", color)}>{value}</p>
+                    <p className={cn("text-2xl sm:text-3xl font-bold tabular-nums leading-none", color)}>{value}</p>
                   </div>
                 ))}
               </div>
@@ -723,8 +723,8 @@ export function ReportPreviewPage() {
             {competitors.length > 0 && (
               <li className="border-b py-10">
                 <SectionLabel icon={Users} label="Competitive Landscape" accent="text-[var(--chart-3)]" />
-                <div className="overflow-hidden rounded-xl border border-border/50 bg-background mb-4">
-                  <table className="w-full text-sm">
+                <div className="overflow-x-auto rounded-xl border border-border/50 bg-background mb-4">
+                  <table className="w-full text-sm min-w-[400px]">
                     <thead>
                       <tr className="border-b border-border/50 bg-muted/40">
                         <th className="px-4 py-3 text-left font-semibold text-foreground w-10">#</th>
@@ -793,8 +793,8 @@ export function ReportPreviewPage() {
                 <p className="text-sm text-muted-foreground leading-relaxed mb-6">
                   Real-time intelligence on competitor web presence, content strategy, and AI visibility signals.
                 </p>
-                <div className="overflow-hidden rounded-xl border border-border/50 bg-background">
-                  <table className="w-full text-sm">
+                <div className="overflow-x-auto rounded-xl border border-border/50 bg-background">
+                  <table className="w-full text-sm min-w-[500px]">
                     <thead>
                       <tr className="border-b border-border/50 bg-muted/40">
                         <th className="px-4 py-3 text-left font-semibold text-foreground">Competitor</th>
