@@ -2,6 +2,7 @@ import { create } from 'zustand';
 import Cookies from 'js-cookie';
 import type { MeResponse } from '@/lib/api/auth';
 import { authApi } from '@/lib/api/auth';
+import { APIClientError } from '@/lib/api/client';
 
 interface AuthState {
   user: MeResponse | null;
@@ -23,7 +24,14 @@ export const useAuthStore = create<AuthState>((set) => ({
     try {
       const user = await authApi.me();
       set({ user, isLoading: false, isAuthenticated: true });
-    } catch {
+    } catch (err) {
+      if (err instanceof APIClientError && (err.status === 401 || err.status === 404)) {
+        Cookies.remove('access_token');
+        Cookies.remove('refresh_token');
+        set({ user: null, isLoading: false, isAuthenticated: false });
+        window.location.href = `${AUTH_URL}/login`;
+        return;
+      }
       set({ user: null, isLoading: false, isAuthenticated: false });
     }
   },
