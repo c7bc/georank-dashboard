@@ -18,4 +18,7 @@ export const authApi = {
   async me(): Promise<MeResponse> {
     return api.get<MeResponse>('/auth/me');
   },
+  async logout(): Promise<void> {
+    await api.post('/auth/logout');
+  },
 };
