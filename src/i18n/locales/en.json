@@ -1133,7 +1133,7 @@
     "keyword": "Keyword",
     "position": "Position",
     "empty": "No mentions yet. Add keywords and run queries to see results.",
-    "showing": "Showing {{count}} of {{total}} mentions",
+    "showing": "Showing {shown} of {total} mentions",
     "detailTitle": "AI Analysis Details",
     "ranked": "Ranked #{position} of {total}",
     "notRanked": "Not ranked among {total} recommendations",

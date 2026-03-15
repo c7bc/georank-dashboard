@@ -965,7 +965,7 @@
     "keyword": "Palavra-chave",
     "position": "Posição",
     "empty": "Nenhuma menção ainda. Adicione palavras-chave e execute consultas para ver resultados.",
-    "showing": "Mostrando {{count}} de {{total}} menções",
+    "showing": "Mostrando {shown} de {total} menções",
     "detailTitle": "Detalhes da Análise IA",
     "ranked": "Posição #{position} de {total}",
     "notRanked": "Não classificado entre {total} recomendações",

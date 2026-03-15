@@ -947,7 +947,7 @@
     "keyword": "Keyword",
     "position": "Posición",
     "empty": "Sin menciones aún. Agrega keywords y ejecuta consultas para ver resultados.",
-    "showing": "Mostrando {{count}} de {{total}} menciones",
+    "showing": "Mostrando {shown} de {total} menciones",
     "detailTitle": "Detalles del Análisis IA",
     "ranked": "Posición #{position} de {total}",
     "notRanked": "No clasificado entre {total} recomendaciones",
