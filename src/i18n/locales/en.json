@@ -1035,6 +1035,7 @@
     "dashboard": "Dashboard",
     "domains": "Domains",
     "keywords": "Keywords",
+    "mentions": "Mentions",
     "competitors": "Competitors",
     "reports": "Reports",
     "recommendations": "Recommendations",
@@ -1125,6 +1126,14 @@
     "ownerOnly": "Only workspace owners can change this"
   },
   "mentions": {
+    "pageTitle": "Mentions",
+    "pageSubtitle": "All AI query results across your tracked keywords",
+    "allPlatforms": "All Platforms",
+    "allResults": "All Results",
+    "keyword": "Keyword",
+    "position": "Position",
+    "empty": "No mentions yet. Add keywords and run queries to see results.",
+    "showing": "Showing {{count}} of {{total}} mentions",
     "detailTitle": "AI Analysis Details",
     "ranked": "Ranked #{position} of {total}",
     "notRanked": "Not ranked among {total} recommendations",

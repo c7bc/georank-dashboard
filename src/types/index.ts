@@ -776,6 +776,31 @@ export interface APIError {
   status: number;
 }
 
+// ==================== MENTIONS ====================
+export interface Mention {
+  id: number;
+  workspace_id: number;
+  keyword_id: number;
+  platform: Platform;
+  query: string;
+  result: string;
+  position: number | null;
+  context: string;
+  strength: string;
+  sentiment: string;
+  confidence: number;
+  created_at: string;
+  keyword?: { id: number; keyword: string };
+}
+
+export interface MentionListResponse {
+  mentions: Mention[];
+  total: number;
+  page: number;
+  per_page: number;
+  total_pages: number;
+}
+
 // ==================== PAGINATION ====================
 export interface PaginationParams {
   page?: number;

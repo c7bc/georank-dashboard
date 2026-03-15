@@ -849,6 +849,7 @@
     "dashboard": "Dashboard",
     "domains": "Dominios",
     "keywords": "Keywords",
+    "mentions": "Menciones",
     "competitors": "Competidores",
     "reports": "Reportes",
     "recommendations": "Recomendaciones",
@@ -939,6 +940,14 @@
     "ownerOnly": "Solo los propietarios del workspace pueden cambiar esto"
   },
   "mentions": {
+    "pageTitle": "Menciones",
+    "pageSubtitle": "Todos los resultados de consultas IA de tus keywords",
+    "allPlatforms": "Todas las Plataformas",
+    "allResults": "Todos los Resultados",
+    "keyword": "Keyword",
+    "position": "Posición",
+    "empty": "Sin menciones aún. Agrega keywords y ejecuta consultas para ver resultados.",
+    "showing": "Mostrando {{count}} de {{total}} menciones",
     "detailTitle": "Detalles del Análisis IA",
     "ranked": "Posición #{position} de {total}",
     "notRanked": "No clasificado entre {total} recomendaciones",

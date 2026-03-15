@@ -7,6 +7,7 @@ import { CompetitorsPage } from '@/pages/CompetitorsPage'
 import { DomainsPage } from '@/pages/DomainsPage'
 import { ReportsPage } from '@/pages/ReportsPage'
 import { ReportPreviewPage } from '@/pages/ReportPreviewPage'
+import { MentionsPage } from '@/pages/MentionsPage'
 import { RecommendationsPage } from '@/pages/RecommendationsPage'
 import { OnboardingPage } from '@/pages/OnboardingPage'
 import { SettingsIndexPage } from '@/pages/settings/SettingsIndexPage'
@@ -26,6 +27,7 @@ export default function App() {
         <Route element={<AuthenticatedLayout />}>
           <Route path="/" element={<DashboardPage />} />
           <Route path="/keywords" element={<KeywordsPage />} />
+          <Route path="/mentions" element={<MentionsPage />} />
           <Route path="/competitors" element={<CompetitorsPage />} />
           <Route path="/domains" element={<DomainsPage />} />
           <Route path="/reports" element={<ReportsPage />} />

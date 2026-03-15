@@ -1,42 +1,31 @@
-import Cookies from 'js-cookie';
-import type { AIRecommendation, QueryInsight } from '@/types';
-
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api';
-
-async function clientFetch<T>(endpoint: string): Promise<T> {
-  const token = Cookies.get('access_token');
-  const res = await fetch(`${API_BASE_URL}${endpoint}`, {
-    headers: {
-      'Content-Type': 'application/json',
-      ...(token ? { Authorization: `Bearer ${token}` } : {}),
-    },
-  });
-
-  if (!res.ok) {
-    throw new Error(`API error: ${res.status}`);
-  }
-
-  const json = await res.json();
-  if (json && typeof json === 'object' && 'success' in json && 'data' in json) {
-    return json.data as T;
-  }
-  return json as T;
-}
+import { api } from './client';
+import type { AIRecommendation, QueryInsight, MentionListResponse, PaginationParams } from '@/types';
 
 export const mentionsApi = {
-  getRecommendations(mentionId: number): Promise<AIRecommendation[]> {
-    return clientFetch<AIRecommendation[]>(`/mentions/${mentionId}/recommendations`);
+  async list(params?: PaginationParams & { platform?: string; result?: string; keyword_id?: number }): Promise<MentionListResponse> {
+    const query = new URLSearchParams();
+    if (params?.page) query.set('page', String(params.page));
+    if (params?.per_page) query.set('per_page', String(params.per_page));
+    if (params?.platform) query.set('platform', params.platform);
+    if (params?.result) query.set('result', params.result);
+    if (params?.keyword_id) query.set('keyword_id', String(params.keyword_id));
+    const qs = query.toString();
+    return api.get<MentionListResponse>(`/mentions${qs ? `?${qs}` : ''}`);
   },
 
-  getInsights(mentionId: number): Promise<QueryInsight> {
-    return clientFetch<QueryInsight>(`/mentions/${mentionId}/insights`);
+  async getRecommendations(mentionId: number): Promise<AIRecommendation[]> {
+    return api.get<AIRecommendation[]>(`/mentions/${mentionId}/recommendations`);
   },
 
-  getLatestKeywordMention(keywordId: number): Promise<{ mention_id: number }> {
-    return clientFetch<{ mention_id: number }>(`/keywords/${keywordId}/mentions/latest`);
+  async getInsights(mentionId: number): Promise<QueryInsight> {
+    return api.get<QueryInsight>(`/mentions/${mentionId}/insights`);
   },
 
-  getKeywordMentions(keywordId: number): Promise<Array<{ id: number; platform: string; position: number | null; result: string; created_at: string }>> {
-    return clientFetch<Array<{ id: number; platform: string; position: number | null; result: string; created_at: string }>>(`/keywords/${keywordId}/mentions`);
+  async getLatestKeywordMention(keywordId: number): Promise<{ mention_id: number }> {
+    return api.get<{ mention_id: number }>(`/keywords/${keywordId}/mentions/latest`);
+  },
+
+  async getKeywordMentions(keywordId: number): Promise<Array<{ id: number; platform: string; position: number | null; result: string; created_at: string }>> {
+    return api.get<Array<{ id: number; platform: string; position: number | null; result: string; created_at: string }>>(`/keywords/${keywordId}/mentions`);
   },
 };
