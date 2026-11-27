@@ -1,4 +1,5 @@
 import { api } from './client';
+import { normalizeDomainPage } from './response';
 import type { PaginationParams } from '@/types';
 
 export interface DomainResponse {
@@ -32,7 +33,8 @@ export const domainsApi = {
     if (params?.per_page) searchParams.set('per_page', String(params.per_page));
 
     const query = searchParams.toString();
-    return api.get<DomainListResponse>(`/domains${query ? `?${query}` : ''}`);
+    const payload = await api.get<DomainListResponse | DomainResponse[]>(`/domains${query ? `?${query}` : ''}`);
+    return normalizeDomainPage(payload, params);
   },
 
   async get(id: number): Promise<DomainResponse> {

@@ -20,3 +20,17 @@ export function apiFailure(payload: unknown, status: number) {
     status,
   };
 }
+
+export function normalizeDomainPage<T>(
+  payload: T[] | { items: T[]; total: number; page: number; per_page: number },
+  params?: { page?: number; per_page?: number },
+) {
+  if (!Array.isArray(payload)) return payload;
+
+  return {
+    items: payload,
+    total: payload.length,
+    page: params?.page ?? 1,
+    per_page: params?.per_page ?? Math.max(payload.length, 1),
+  };
+}

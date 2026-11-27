@@ -4,10 +4,11 @@ import { useDelayedLoading } from "@/hooks/use-delayed-loading";
 import { DashboardHeader } from "@/components/blocks/dashboard-header";
 import { MentionsTable } from "@/components/mentions/mentions-table";
 import { Skeleton } from "@/components/ui/skeleton";
+import { readPageNumber } from "@/lib/pagination";
 
 export function MentionsPage() {
   const [searchParams] = useSearchParams();
-  const page = parseInt(searchParams.get("page") || "1", 10);
+  const page = readPageNumber(searchParams.get("page"));
 
   const { data, isLoading } = useMentions({
     page,

@@ -1,5 +1,4 @@
 import { useSearchParams } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 import { useKeywords } from "@/hooks/queries/use-keywords";
 import { useBillingUsage, useBillingPlan } from "@/hooks/queries/use-billing";
 import { useDomains } from "@/hooks/queries/use-domains";
@@ -7,11 +6,11 @@ import { useDelayedLoading } from "@/hooks/use-delayed-loading";
 import { DashboardHeader } from "@/components/blocks/dashboard-header";
 import { KeywordsTable } from "@/components/keywords/keywords-table";
 import { Skeleton } from "@/components/ui/skeleton";
+import { readPageNumber } from "@/lib/pagination";
 
 export function KeywordsPage() {
-  const { t } = useTranslation('translation', { keyPrefix: 'keywords' });
   const [searchParams] = useSearchParams();
-  const page = parseInt(searchParams.get("page") || "1", 10);
+  const page = readPageNumber(searchParams.get("page"));
 
   const { data: keywordsData, isLoading: isKeywordsLoading } = useKeywords({
     page,
@@ -28,8 +27,7 @@ export function KeywordsPage() {
   const { data: domainsData, isLoading: isDomainsLoading } = useDomains();
 
   const isLoading = isKeywordsLoading || isUsageLoading || isPlanLoading || isDomainsLoading;
-  const domainsArray = Array.isArray(domainsData) ? domainsData : ((domainsData as any)?.items ?? []);
-  const domains = domainsArray.map((d: { id: number; name: string; url: string }) => ({ id: d.id, name: d.name, url: d.url }));
+  const domains = domainsData?.items ?? [];
 
   const showSkeleton = useDelayedLoading(isLoading);
 

@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import { useDomains } from "@/hooks/queries/use-domains";
 import { useBillingPlan } from "@/hooks/queries/use-billing";
 import { useDelayedLoading } from "@/hooks/use-delayed-loading";
@@ -7,16 +6,12 @@ import { DomainsClient } from "@/components/domains/domains-client";
 import { Skeleton } from "@/components/ui/skeleton";
 
 export function DomainsPage() {
-  const { t } = useTranslation('translation', { keyPrefix: 'domains' });
   const { data: domainsData, isLoading: isDomainsLoading } = useDomains();
   const { data: plan, isLoading: isPlanLoading } = useBillingPlan();
   const isLoading = isDomainsLoading || isPlanLoading;
 
-  let domains = [];
-  if (domainsData) {
-    domains = Array.isArray(domainsData) ? domainsData : (domainsData as any).items || [];
-  }
-  const domainLimit = (plan as any)?.domain_limit || 1;
+  const domains = domainsData?.items ?? [];
+  const domainLimit = plan?.domain_limit || 1;
 
   const showSkeleton = useDelayedLoading(isLoading);
 
