@@ -1,5 +1,6 @@
 import Cookies from 'js-cookie';
 import type { APIError } from '@/types';
+import { apiFailure, unwrapResponse } from './response';
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api';
 
@@ -10,6 +11,7 @@ interface RequestOptions {
   body?: unknown;
   headers?: Record<string, string>;
   skipAuth?: boolean;
+  signal?: AbortSignal;
 }
 
 class APIClientError extends Error {
@@ -37,17 +39,18 @@ export async function apiFetch<T>(
     body,
     headers = {},
     skipAuth = false,
+    signal,
   } = options;
 
   const token = getToken();
 
-  const requestHeaders: Record<string, string> = {
-    'Content-Type': 'application/json',
-    ...headers,
-  };
+  const requestHeaders = new Headers(headers);
+  if (body !== undefined && !requestHeaders.has('Content-Type')) {
+    requestHeaders.set('Content-Type', 'application/json');
+  }
 
   if (token && !skipAuth) {
-    requestHeaders['Authorization'] = `Bearer ${token}`;
+    requestHeaders.set('Authorization', `Bearer ${token}`);
   }
 
   const url = `${API_BASE_URL}${endpoint}`;
@@ -56,44 +59,20 @@ export async function apiFetch<T>(
     method,
     headers: requestHeaders,
     credentials: 'include',
+    signal,
   };
 
-  if (body) {
+  if (body !== undefined) {
     fetchOptions.body = JSON.stringify(body);
   }
 
-  const startTime = performance.now();
   const response = await fetch(url, fetchOptions);
-  const duration = Math.round(performance.now() - startTime);
-
   if (!response.ok) {
-    let errorData: APIError;
-    try {
-      errorData = await response.json();
-    } catch {
-      errorData = {
-        error: 'unknown_error',
-        message: response.statusText || 'An error occurred',
-        status: response.status,
-      };
-    }
-    console.log(`[API] ${method} ${endpoint} → ${response.status} (${duration}ms)`, errorData);
-    throw new APIClientError(errorData.message, response.status, errorData);
+    const failure = apiFailure(await response.json().catch(() => null), response.status);
+    throw new APIClientError(failure.message, response.status, failure);
   }
-
-  if (response.status === 204) {
-    console.log(`[API] ${method} ${endpoint} → 204 (${duration}ms)`);
-    return {} as T;
-  }
-
-  const json = await response.json();
-
-  const data = (json && typeof json === 'object' && 'success' in json && 'data' in json)
-    ? json.data as T
-    : json as T;
-
-  console.log(`[API] ${method} ${endpoint} → ${response.status} (${duration}ms)`, data);
-  return data;
+  if (response.status === 204) return {} as T;
+  return unwrapResponse(await response.json()) as T;
 }
 
 export const api = {
